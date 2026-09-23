@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit Converter - Length, Weight, Volume, Temperature | Everyday Calculator</title>
+<meta name="description" content="Free online unit converter for length, weight, area, volume, temperature, time, speed, digital storage, pressure, energy, power and angle.">
+<link rel="canonical" href="https://example.com/converter.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">Everyday Calculator</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#calculator">Calculator</a></li>
+        <li><a href="converter.html" aria-current="page">Unit Converter</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="more.html">More</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <h1>Unit Converter</h1>
+    <p class="lede">Convert between common units of measurement. The result updates as you type.</p>
+
+    <div class="tab-list" role="tablist" aria-label="Unit category" id="category-tabs"></div>
+
+    <div class="panel">
+      <div class="converter-row">
+        <div class="field">
+          <label for="from-value">Amount</label>
+          <input type="text" inputmode="decimal" id="from-value" value="1">
+        </div>
+        <button type="button" class="swap-btn" id="swap-units" aria-label="Swap units">⇄</button>
+        <div class="field">
+          <label for="to-value">Result</label>
+          <input type="text" id="to-value" readonly>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="from-unit">From</label>
+          <select id="from-unit"></select>
+        </div>
+        <div class="field">
+          <label for="to-unit">To</label>
+          <select id="to-unit"></select>
+        </div>
+      </div>
+      <div id="converter-error" class="result-box error" hidden></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>&copy; 2026 Everyday Calculator</div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="converter.js"></script>
+</body>
+</html>

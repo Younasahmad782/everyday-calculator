@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>More Calculators - Percentage, Age, BMI, Discount, Tip, Loan | Everyday Calculator</title>
+<meta name="description" content="Free percentage calculator, age calculator, BMI calculator, average calculator, discount calculator, tip calculator and loan EMI calculator.">
+<link rel="canonical" href="https://example.com/more.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">Everyday Calculator</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#calculator">Calculator</a></li>
+        <li><a href="converter.html">Unit Converter</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="more.html" aria-current="page">More</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <h1>More calculators</h1>
+    <p class="lede">A handful of everyday calculators for percentages, age, BMI, averages, discounts, tips and loan payments.</p>
+
+    <h2 id="percentage">Percentage Calculator</h2>
+    <div class="panel">
+      <p class="note">What is X% of Y?</p>
+      <div class="field-row">
+        <div class="field"><label for="pc1-x">X (%)</label><input type="text" inputmode="decimal" id="pc1-x" value="15"></div>
+        <div class="field"><label for="pc1-y">of Y</label><input type="text" inputmode="decimal" id="pc1-y" value="200"></div>
+      </div>
+      <div id="pc1-result" class="result-box"></div>
+
+      <p class="note" style="margin-top:20px">X is what percentage of Y?</p>
+      <div class="field-row">
+        <div class="field"><label for="pc2-x">X</label><input type="text" inputmode="decimal" id="pc2-x" value="30"></div>
+        <div class="field"><label for="pc2-y">Y</label><input type="text" inputmode="decimal" id="pc2-y" value="200"></div>
+      </div>
+      <div id="pc2-result" class="result-box"></div>
+
+      <p class="note" style="margin-top:20px">Percentage increase / decrease from X to Y</p>
+      <div class="field-row">
+        <div class="field"><label for="pc3-x">From X</label><input type="text" inputmode="decimal" id="pc3-x" value="80"></div>
+        <div class="field"><label for="pc3-y">To Y</label><input type="text" inputmode="decimal" id="pc3-y" value="100"></div>
+      </div>
+      <div id="pc3-result" class="result-box"></div>
+    </div>
+
+    <h2 id="age">Age Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field"><label for="age-dob">Date of birth</label><input type="date" id="age-dob"></div>
+        <div class="field"><label for="age-asof">Calculate as of</label><input type="date" id="age-asof"></div>
+      </div>
+      <button type="button" class="btn" id="age-calc">Calculate age</button>
+      <div id="age-result" class="result-box" hidden></div>
+    </div>
+
+    <h2 id="bmi">BMI Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field"><label for="bmi-height">Height (cm)</label><input type="text" inputmode="decimal" id="bmi-height" placeholder="e.g. 170"></div>
+        <div class="field"><label for="bmi-weight">Weight (kg)</label><input type="text" inputmode="decimal" id="bmi-weight" placeholder="e.g. 65"></div>
+      </div>
+      <button type="button" class="btn" id="bmi-calc">Calculate BMI</button>
+      <div id="bmi-result" class="result-box" hidden></div>
+      <p class="note">BMI is a general screening measure and does not account for muscle mass, bone density, or overall body composition. It is not a diagnosis.</p>
+    </div>
+
+    <h2 id="average">Average Calculator</h2>
+    <div class="panel">
+      <div class="field">
+        <label for="avg-numbers">Numbers (comma or space separated)</label>
+        <input type="text" id="avg-numbers" placeholder="e.g. 12, 18, 9, 24">
+      </div>
+      <button type="button" class="btn" id="avg-calc">Calculate</button>
+      <div id="avg-result" class="result-box" hidden></div>
+    </div>
+
+    <h2 id="discount">Discount Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field"><label for="disc-price">Original price</label><input type="text" inputmode="decimal" id="disc-price" value="100"></div>
+        <div class="field"><label for="disc-pct">Discount (%)</label><input type="text" inputmode="decimal" id="disc-pct" value="20"></div>
+      </div>
+      <div id="disc-result" class="result-box"></div>
+    </div>
+
+    <h2 id="tip">Tip Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field"><label for="tip-bill">Bill amount</label><input type="text" inputmode="decimal" id="tip-bill" value="50"></div>
+        <div class="field"><label for="tip-pct">Tip (%)</label><input type="text" inputmode="decimal" id="tip-pct" value="15"></div>
+        <div class="field"><label for="tip-people">Number of people</label><input type="text" inputmode="numeric" id="tip-people" value="1"></div>
+      </div>
+      <div id="tip-result" class="result-box"></div>
+    </div>
+
+    <h2 id="loan">Loan / EMI Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field"><label for="loan-amount">Loan amount</label><input type="text" inputmode="decimal" id="loan-amount" value="10000"></div>
+        <div class="field"><label for="loan-rate">Annual interest rate (%)</label><input type="text" inputmode="decimal" id="loan-rate" value="8"></div>
+        <div class="field"><label for="loan-years">Duration (years)</label><input type="text" inputmode="decimal" id="loan-years" value="5"></div>
+      </div>
+      <div id="loan-result" class="result-box"></div>
+      <p class="note">Monthly payment = P × r × (1 + r)<sup>n</sup> / ((1 + r)<sup>n</sup> − 1), where r is the monthly interest rate and n is the number of monthly payments.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>&copy; 2026 Everyday Calculator</div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="more.js"></script>
+</body>
+</html>

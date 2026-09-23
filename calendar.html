@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar &amp; Date Calculator - Everyday Calculator</title>
+<meta name="description" content="Free online calendar with a date difference calculator and an add or subtract days tool.">
+<link rel="canonical" href="https://example.com/calendar.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">Everyday Calculator</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#calculator">Calculator</a></li>
+        <li><a href="converter.html">Unit Converter</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="calendar.html" aria-current="page">Calendar</a></li>
+        <li><a href="more.html">More</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <h1>Calendar</h1>
+    <p class="lede">Browse the calendar, work out the time between two dates, or add and subtract days from a date.</p>
+
+    <div class="panel">
+      <div class="cal-head">
+        <h3 id="cal-month-label"></h3>
+        <div class="cal-nav">
+          <button type="button" class="btn secondary" id="cal-prev">‹ Prev</button>
+          <button type="button" class="btn secondary" id="cal-today">Today</button>
+          <button type="button" class="btn secondary" id="cal-next">Next ›</button>
+        </div>
+      </div>
+      <div class="cal-grid" id="cal-grid" role="table" aria-label="Calendar"></div>
+    </div>
+
+    <h2 id="difference">Date Difference Calculator</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field">
+          <label for="diff-start">Start date</label>
+          <input type="date" id="diff-start">
+        </div>
+        <div class="field">
+          <label for="diff-end">End date</label>
+          <input type="date" id="diff-end">
+        </div>
+      </div>
+      <button type="button" class="btn" id="diff-calc">Calculate difference</button>
+      <div id="diff-result" class="result-box" hidden></div>
+    </div>
+
+    <h2 id="addsub">Add / Subtract Days</h2>
+    <div class="panel">
+      <div class="field-row">
+        <div class="field">
+          <label for="add-date">Date</label>
+          <input type="date" id="add-date">
+        </div>
+        <div class="field">
+          <label for="add-days">Number of days</label>
+          <input type="number" id="add-days" min="0" value="30">
+        </div>
+        <div class="field">
+          <label for="add-op">Operation</label>
+          <select id="add-op">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="btn" id="add-calc">Calculate date</button>
+      <div id="add-result" class="result-box" hidden></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>&copy; 2026 Everyday Calculator</div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="calendar.js"></script>
+</body>
+</html>

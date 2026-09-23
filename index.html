@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday Calculator - Free Online Calculator, Unit &amp; Currency Converter</title>
+<meta name="description" content="A free online calculator with unit converter, currency converter, calendar and date tools, and everyday calculators like percentage, age, BMI, discount, tip and loan EMI.">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:title" content="Everyday Calculator">
+<meta property="og:description" content="Free calculators and converters for everyday use.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">Everyday Calculator</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="index.html#calculator">Calculator</a></li>
+        <li><a href="converter.html">Unit Converter</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="more.html">More</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <h1>Free calculators and converters for everyday use</h1>
+    <p class="lede">A basic calculator, unit converter, currency converter, calendar tools, and a handful of everyday calculators — all in one place, free, and with no sign-up.</p>
+
+    <section id="calculator" aria-labelledby="calc-heading">
+      <h2 id="calc-heading" class="visually-hidden">Calculator</h2>
+      <div class="calculator">
+        <div class="calc-display">
+          <div class="calc-expression" id="calc-expression" aria-hidden="true">&nbsp;</div>
+          <div class="calc-value" id="calc-value" role="status" aria-live="polite">0</div>
+        </div>
+        <div class="calc-keys" role="group" aria-label="Calculator keys">
+          <button type="button" data-action="clear">C</button>
+          <button type="button" data-action="backspace">⌫</button>
+          <button type="button" data-action="percent">%</button>
+          <button type="button" data-action="op" data-op="/" class="op">÷</button>
+
+          <button type="button" data-action="digit" data-digit="7">7</button>
+          <button type="button" data-action="digit" data-digit="8">8</button>
+          <button type="button" data-action="digit" data-digit="9">9</button>
+          <button type="button" data-action="op" data-op="*" class="op">×</button>
+
+          <button type="button" data-action="digit" data-digit="4">4</button>
+          <button type="button" data-action="digit" data-digit="5">5</button>
+          <button type="button" data-action="digit" data-digit="6">6</button>
+          <button type="button" data-action="op" data-op="-" class="op">−</button>
+
+          <button type="button" data-action="digit" data-digit="1">1</button>
+          <button type="button" data-action="digit" data-digit="2">2</button>
+          <button type="button" data-action="digit" data-digit="3">3</button>
+          <button type="button" data-action="op" data-op="+" class="op">+</button>
+
+          <button type="button" data-action="sign">+/-</button>
+          <button type="button" data-action="digit" data-digit="0">0</button>
+          <button type="button" data-action="decimal">.</button>
+          <button type="button" data-action="equals" class="equals">=</button>
+        </div>
+        <div class="calc-history">
+          <h2>Recent calculations</h2>
+          <ul id="calc-history-list"><li class="empty">No calculations yet.</li></ul>
+          <button type="button" class="clear-history" id="calc-clear-history">Clear history</button>
+        </div>
+      </div>
+      <p class="note">Works with your keyboard too: numbers, <code>+ - * /</code>, Enter for equals, Backspace, and Escape to clear.</p>
+    </section>
+
+    <h2>More tools</h2>
+    <div class="tool-grid">
+      <a class="tool-card" href="converter.html"><h3>Unit Converter</h3><p>Length, weight, area, volume, temperature and more</p></a>
+      <a class="tool-card" href="currency.html"><h3>Currency Converter</h3><p>Convert between world currencies</p></a>
+      <a class="tool-card" href="calendar.html"><h3>Calendar</h3><p>Month view, date difference, add or subtract days</p></a>
+      <a class="tool-card" href="more.html#age"><h3>Age Calculator</h3><p>Exact age in years, months and days</p></a>
+      <a class="tool-card" href="more.html#percentage"><h3>Percentage Calculator</h3><p>Percentages, increases and decreases</p></a>
+      <a class="tool-card" href="more.html#bmi"><h3>BMI Calculator</h3><p>Body mass index and category</p></a>
+      <a class="tool-card" href="more.html#discount"><h3>Discount Calculator</h3><p>Final price after a discount</p></a>
+      <a class="tool-card" href="more.html#tip"><h3>Tip Calculator</h3><p>Split a bill and work out the tip</p></a>
+      <a class="tool-card" href="more.html#loan"><h3>Loan / EMI Calculator</h3><p>Monthly payment and total interest</p></a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>&copy; 2026 Everyday Calculator</div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
